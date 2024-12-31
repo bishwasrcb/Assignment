@@ -16,85 +16,32 @@
 
     </div>
     <div>
-        <mat-card class="example-card" appearance="outlined">
-            <!-- <mat-card-header>
-                <div mat-card-avatar class="example-header-image"></div>
-                <mat-card-title>Shiba Inu</mat-card-title>
-                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-            </mat-card-header> -->
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                alt="Photo of a Shiba Inu">
-            <mat-card-content>
-                <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                    bred for hunting.
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-button>LIKE</button>
-                <button mat-button>SHARE</button>
-            </mat-card-actions>
-        </mat-card>
-
-    </div>
-    <div>
-        <mat-card class="example-card" appearance="outlined">
-            <!-- <mat-card-header>
-                <div mat-card-avatar class="example-header-image"></div>
-                <mat-card-title>Shiba Inu</mat-card-title>
-                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-            </mat-card-header> -->
-            <img mat-card-image src="https://m.media-amazon.com/images/I/71w-mmKgIfL._SX679_.jpg"
-                alt="Photo of a Mobile">
+        <mat-card class="example-card" appearance="outlined"  [routerLink]="['/product-details']" [queryParams]="{id: '24'}">
+            <div style="background-color: aliceblue; width: 391px;">
+                <img mat-card-image src="https://m.media-amazon.com/images/I/71w-mmKgIfL._SX679_.jpg" style="align-items: center;width: 350px;"
+                    alt="Photo of a Mobile">
+            </div>
             <mat-card-content>
                 <b>
                     realme NARZO 70x 5G (Ice Blue, 6GB RAM,128GB Storage)|120Hz Ultra Smooth Display|Dimensity 6100+ 6nm
                     5G|50MP AI Camera|45W Charger in The Box
                 </b>
-                <!-- <fa-icon [icon]="faStar"></fa-icon> -->
-                <!-- <fa-icon [icon]="faCoffee"></fa-icon> -->
-                <!-- <div>
-                    <p><i class="fa fa-star" aria-hidden="true"></i></p>
+                <div>
+                    <fa-icon [icon]="rating" style="color: orange"></fa-icon>
+                    <fa-icon [icon]="rating" style="color: orange"></fa-icon>
+                    <fa-icon [icon]="rating" style="color: orange"></fa-icon>
+                    <fa-icon [icon]="rating" style="color: orange"></fa-icon>
+                    <fa-icon [icon]="halfRating" style="color: orange"></fa-icon>
                 </div>
                 <div>
-                    <span></span>
-                </div> -->
-                <!-- <star-rating [starType]="'svg'" [rating]="2.63"></star-rating> -->
-                <!-- <div>
-                    <li (click)="countStar(stars)">
-                        <i class="fa fa-star"></i>
-                    </li>
-                </div> -->
+                    <fa-icon [icon]="Rupee"></fa-icon> <span style="font-size: xx-large;">9999</span>
+                </div>
             </mat-card-content>
             <mat-card-actions>
                 <button mat-button>LIKE</button>
                 <button mat-button>SHARE</button>
             </mat-card-actions>
         </mat-card>
-
-        <div style="text-align:center">
-            <h2>Using Solid Icons</h2>
-            <fa-icon [icon]="['fas', 'square']"></fa-icon>
-            <br />
-            <fa-icon [icon]="['fas', 'check-square']"></fa-icon>
-          </div>
-          <hr />
-          <div style="text-align:center">
-            <h2>Using Regular Icons</h2>
-            <fa-icon [icon]="['far', 'square']"></fa-icon>
-            <br />
-            <fa-icon [icon]="['far', 'check-square']"></fa-icon>
-          </div>
-          <hr />
-          <div style="text-align:center">
-            <h2>Using Brand Icons</h2>
-            <fa-icon [icon]="['fab', 'stack-overflow']"></fa-icon>
-            <br />
-            <fa-icon [icon]="['fab', 'github']"></fa-icon>
-            <br />
-            <fa-icon [icon]="['fab', 'medium']"></fa-icon>
-          </div>
 
     </div>
 
